@@ -1,0 +1,6 @@
+framework module Pods_ConnectMeTests {
+  umbrella header "Pods-ConnectMeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
