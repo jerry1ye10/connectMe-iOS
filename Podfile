@@ -9,6 +9,7 @@ target 'ConnectMe' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
   target 'ConnectMeTests' do
     inherit! :search_paths

@@ -15,7 +15,7 @@
 		C4310BEE2383271D0008C569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4310BEC2383271D0008C569 /* LaunchScreen.storyboard */; };
 		C4310BF92383271D0008C569 /* ConnectMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4310BF82383271D0008C569 /* ConnectMeTests.swift */; };
 		C4310C042383271D0008C569 /* ConnectMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4310C032383271D0008C569 /* ConnectMeUITests.swift */; };
-		C4310C12238328D40008C569 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4310C11238328D40008C569 /* GoogleService-Info.plist */; };
+		C4310C14238342FF0008C569 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4310C13238342FF0008C569 /* GoogleService-Info.plist */; };
 		DC608FF6AD636226FE6C25CC /* Pods_ConnectMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996A222EC2A4EA4E0E2A0A41 /* Pods_ConnectMeTests.framework */; };
 		FDDC7337EB84089AB3415772 /* Pods_ConnectMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298AB8CC715C531B76BAEFE7 /* Pods_ConnectMe.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +58,7 @@
 		C4310BFF2383271D0008C569 /* ConnectMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4310C032383271D0008C569 /* ConnectMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectMeUITests.swift; sourceTree = "<group>"; };
 		C4310C052383271D0008C569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4310C11238328D40008C569 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4310C13238342FF0008C569 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1C73AA2BBD59362E8CB3F07 /* Pods-ConnectMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectMe.debug.xcconfig"; path = "Target Support Files/Pods-ConnectMe/Pods-ConnectMe.debug.xcconfig"; sourceTree = "<group>"; };
 		F366E37F372DA9A50F9FC3E2 /* Pods-ConnectMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectMeTests.release.xcconfig"; path = "Target Support Files/Pods-ConnectMeTests/Pods-ConnectMeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +145,7 @@
 				C4310BEA2383271D0008C569 /* Assets.xcassets */,
 				C4310BEC2383271D0008C569 /* LaunchScreen.storyboard */,
 				C4310BEF2383271D0008C569 /* Info.plist */,
-				C4310C11238328D40008C569 /* GoogleService-Info.plist */,
+				C4310C13238342FF0008C569 /* GoogleService-Info.plist */,
 			);
 			path = ConnectMe;
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4310BEE2383271D0008C569 /* LaunchScreen.storyboard in Resources */,
+				C4310C14238342FF0008C569 /* GoogleService-Info.plist in Resources */,
 				C4310BEB2383271D0008C569 /* Assets.xcassets in Resources */,
 				C4310BE92383271A0008C569 /* Main.storyboard in Resources */,
-				C4310C12238328D40008C569 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,12 +586,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ConnectMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ConnectMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryye.connectMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,12 +605,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ConnectMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.ConnectMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryye.connectMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
