@@ -17,6 +17,13 @@
 		C4310C042383271D0008C569 /* ConnectMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4310C032383271D0008C569 /* ConnectMeUITests.swift */; };
 		C4310C14238342FF0008C569 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4310C13238342FF0008C569 /* GoogleService-Info.plist */; };
 		DC608FF6AD636226FE6C25CC /* Pods_ConnectMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996A222EC2A4EA4E0E2A0A41 /* Pods_ConnectMeTests.framework */; };
+		F5B0DEB92397806A0029D3EE /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0DEB82397806A0029D3EE /* RegisterController.swift */; };
+		F5B0DEBB23981E0F0029D3EE /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0DEBA23981E0F0029D3EE /* ContactsTableViewController.swift */; };
+		F5B0DEBD23981EDE0029D3EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0DEBC23981EDE0029D3EE /* DetailViewController.swift */; };
+		F5B0DEBF239859A90029D3EE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0DEBE239859A80029D3EE /* Contact.swift */; };
+		F5F750622398FB950026C9A0 /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F750612398FB950026C9A0 /* xmark.png */; };
+		F5F75065239909240026C9A0 /* checkmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5F75064239909240026C9A0 /* checkmark.jpg */; };
+		F5F75067239949650026C9A0 /* ConnectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F75066239949650026C9A0 /* ConnectionsTableViewController.swift */; };
 		FDDC7337EB84089AB3415772 /* Pods_ConnectMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298AB8CC715C531B76BAEFE7 /* Pods_ConnectMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,13 @@
 		C4310C13238342FF0008C569 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1C73AA2BBD59362E8CB3F07 /* Pods-ConnectMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectMe.debug.xcconfig"; path = "Target Support Files/Pods-ConnectMe/Pods-ConnectMe.debug.xcconfig"; sourceTree = "<group>"; };
 		F366E37F372DA9A50F9FC3E2 /* Pods-ConnectMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectMeTests.release.xcconfig"; path = "Target Support Files/Pods-ConnectMeTests/Pods-ConnectMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5B0DEB82397806A0029D3EE /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		F5B0DEBA23981E0F0029D3EE /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		F5B0DEBC23981EDE0029D3EE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5B0DEBE239859A80029D3EE /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F5F750612398FB950026C9A0 /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmark.png; sourceTree = "<group>"; };
+		F5F75064239909240026C9A0 /* checkmark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkmark.jpg; sourceTree = "<group>"; };
+		F5F75066239949650026C9A0 /* ConnectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,11 +155,18 @@
 			children = (
 				C4310BE32383271A0008C569 /* AppDelegate.swift */,
 				C4310BE52383271A0008C569 /* ViewController.swift */,
+				F5B0DEB82397806A0029D3EE /* RegisterController.swift */,
+				F5B0DEBA23981E0F0029D3EE /* ContactsTableViewController.swift */,
+				F5B0DEBE239859A80029D3EE /* Contact.swift */,
 				C4310BE72383271A0008C569 /* Main.storyboard */,
+				F5F75066239949650026C9A0 /* ConnectionsTableViewController.swift */,
+				F5B0DEBC23981EDE0029D3EE /* DetailViewController.swift */,
 				C4310BEA2383271D0008C569 /* Assets.xcassets */,
 				C4310BEC2383271D0008C569 /* LaunchScreen.storyboard */,
 				C4310BEF2383271D0008C569 /* Info.plist */,
 				C4310C13238342FF0008C569 /* GoogleService-Info.plist */,
+				F5F75064239909240026C9A0 /* checkmark.jpg */,
+				F5F750612398FB950026C9A0 /* xmark.png */,
 			);
 			path = ConnectMe;
 			sourceTree = "<group>";
@@ -281,6 +302,8 @@
 				C4310C14238342FF0008C569 /* GoogleService-Info.plist in Resources */,
 				C4310BEB2383271D0008C569 /* Assets.xcassets in Resources */,
 				C4310BE92383271A0008C569 /* Main.storyboard in Resources */,
+				F5F750622398FB950026C9A0 /* xmark.png in Resources */,
+				F5F75065239909240026C9A0 /* checkmark.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +431,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B0DEBF239859A90029D3EE /* Contact.swift in Sources */,
 				C4310BE62383271A0008C569 /* ViewController.swift in Sources */,
 				C4310BE42383271A0008C569 /* AppDelegate.swift in Sources */,
+				F5B0DEBD23981EDE0029D3EE /* DetailViewController.swift in Sources */,
+				F5F75067239949650026C9A0 /* ConnectionsTableViewController.swift in Sources */,
+				F5B0DEBB23981E0F0029D3EE /* ContactsTableViewController.swift in Sources */,
+				F5B0DEB92397806A0029D3EE /* RegisterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
