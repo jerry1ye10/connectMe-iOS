@@ -27,17 +27,17 @@
         <!--Navigation Controller-->
         <scene sceneID="Ns5-Nq-cSn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xi2-2L-Gfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ada-UV-WZb" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="kqs-m0-CaD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sxB-aJ-w00">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
                         <segue destination="2HJ-4S-Xse" kind="relationship" relationship="rootViewController" id="INy-WO-ROk"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xi2-2L-Gfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2080" y="792"/>
         </scene>
@@ -51,7 +51,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ConnectMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nU-fg-zNA">
                                 <rect key="frame" x="74" y="155" width="259" height="148"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,11 +89,11 @@
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2W3-Zk-J6Z">
                                 <rect key="frame" x="87" y="272" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5og-mk-Pkc">
                                 <rect key="frame" x="226" y="608" width="101" height="32"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -109,7 +109,7 @@
                     <connections>
                         <outlet property="loginPass" destination="sjO-BW-Fsk" id="UeN-fg-2OE"/>
                         <outlet property="loginUser" destination="INR-c2-kvF" id="Igc-cl-wN2"/>
-                        <segue destination="Ada-UV-WZb" kind="modal" identifier="loginSegue" id="2xC-ao-baQ"/>
+                        <segue destination="Ada-UV-WZb" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="2xC-ao-baQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -202,7 +202,7 @@
                         <outlet property="registerUser" destination="FK2-ya-e1w" id="8Cc-P0-KpQ"/>
                         <outlet property="registerfName" destination="2AV-gz-4ZC" id="1fW-8k-czv"/>
                         <outlet property="registerlName" destination="bSZ-YG-LuU" id="BOP-3B-weA"/>
-                        <segue destination="Ada-UV-WZb" kind="modal" identifier="registerSegue" id="HaF-sD-L5g"/>
+                        <segue destination="Ada-UV-WZb" kind="presentation" identifier="registerSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="HaF-sD-L5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fhr-J1-pRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -212,10 +212,9 @@
         <!--ContactsTableViewController-->
         <scene sceneID="pUn-Hq-Yvr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5h-SW-eUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="ContactsTableViewController" id="2HJ-4S-Xse" customClass="ContactsTableViewController" customModule="ConnectMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="ContactsTableViewController" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="2HJ-4S-Xse" customClass="ContactsTableViewController" customModule="ConnectMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hnT-mV-PHb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -249,17 +248,18 @@
                     <navigationItem key="navigationItem" title="Navigation" id="Fen-xH-uaK">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="yEP-BT-g7C">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6hx-Bp-D9o">
-                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Contacts"/>
                                 <connections>
-                                    <segue destination="JtG-iG-ZeL" kind="show" id="xcP-zN-bYI"/>
+                                    <segue destination="J9d-KN-gJO" kind="show" id="dP3-RN-AMR"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5h-SW-eUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-897" y="837"/>
         </scene>
@@ -268,7 +268,7 @@
             <objects>
                 <tableViewController id="J9d-KN-gJO" customClass="ConnectionsTableViewController" customModule="ConnectMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wkf-g5-nih">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -302,29 +302,12 @@
             </objects>
             <point key="canvasLocation" x="1753.6231884057972" y="109.82142857142857"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EdZ-8k-vDc">
-            <objects>
-                <navigationController id="JtG-iG-ZeL" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7TE-pY-F1A"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bAl-Mj-ym7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="J9d-KN-gJO" kind="relationship" relationship="rootViewController" id="uac-h8-9MY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SDy-Cy-QXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="654" y="136"/>
-        </scene>
         <!--DetailViewController-->
         <scene sceneID="zUm-2l-nj9">
             <objects>
-                <viewController title="DetailViewController" id="Jvs-bR-25P" customClass="DetailViewController" customModule="ConnectMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="DetailViewController" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="Jvs-bR-25P" customClass="DetailViewController" customModule="ConnectMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MQm-nS-nW8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="xmark.png" translatesAutoresizingMaskIntoConstraints="NO" id="FTY-7Z-iXD">
@@ -407,7 +390,7 @@
         <image name="xmark.png" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hwv-24-M7J"/>
-        <segue reference="HaF-sD-L5g"/>
+        <segue reference="INy-WO-ROk"/>
+        <segue reference="2xC-ao-baQ"/>
     </inferredMetricsTieBreakers>
 </document>
