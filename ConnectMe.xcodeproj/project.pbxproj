@@ -24,6 +24,7 @@
 		F5F750622398FB950026C9A0 /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F750612398FB950026C9A0 /* xmark.png */; };
 		F5F75065239909240026C9A0 /* checkmark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5F75064239909240026C9A0 /* checkmark.jpg */; };
 		F5F75067239949650026C9A0 /* ConnectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F75066239949650026C9A0 /* ConnectionsTableViewController.swift */; };
+		F5F750692399D1B40026C9A0 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F5F750682399D1B40026C9A0 /* images.jpeg */; };
 		FDDC7337EB84089AB3415772 /* Pods_ConnectMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298AB8CC715C531B76BAEFE7 /* Pods_ConnectMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		F5F750612398FB950026C9A0 /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmark.png; sourceTree = "<group>"; };
 		F5F75064239909240026C9A0 /* checkmark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkmark.jpg; sourceTree = "<group>"; };
 		F5F75066239949650026C9A0 /* ConnectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsTableViewController.swift; sourceTree = "<group>"; };
+		F5F750682399D1B40026C9A0 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				C4310C13238342FF0008C569 /* GoogleService-Info.plist */,
 				F5F75064239909240026C9A0 /* checkmark.jpg */,
 				F5F750612398FB950026C9A0 /* xmark.png */,
+				F5F750682399D1B40026C9A0 /* images.jpeg */,
 			);
 			path = ConnectMe;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				C4310BEE2383271D0008C569 /* LaunchScreen.storyboard in Resources */,
 				C4310C14238342FF0008C569 /* GoogleService-Info.plist in Resources */,
 				C4310BEB2383271D0008C569 /* Assets.xcassets in Resources */,
+				F5F750692399D1B40026C9A0 /* images.jpeg in Resources */,
 				C4310BE92383271A0008C569 /* Main.storyboard in Resources */,
 				F5F750622398FB950026C9A0 /* xmark.png in Resources */,
 				F5F75065239909240026C9A0 /* checkmark.jpg in Resources */,

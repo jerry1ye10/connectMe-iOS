@@ -48,7 +48,7 @@ class DetailViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = firstName + " " + lastName
-        interests.text = interestA + "," + interestB
+        interests.text = firstName + " " + lastName + "interests are: " + interestA + "," + interestB + ". " + firstName + "is very excited to connect with you as soon as possible!"
         
         
         
